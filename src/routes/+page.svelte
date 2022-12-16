@@ -2,9 +2,7 @@
 	import Stars from '$lib/components/Stars.svelte';
 </script>
 
-<svelte:head>
-	<script src="https://kit.fontawesome.com/d2e5e5458f.js" crossorigin="anonymous"></script>
-</svelte:head>
+<svelte:head />
 
 <section id="one">
 	<div class="content">
