@@ -14,6 +14,9 @@
 		align-items: center;
 		justify-content: space-evenly;
 		min-height: 20vh;
+		h3 {
+			text-align: center;
+		}
 		form {
 			display: flex;
 			flex-direction: column;

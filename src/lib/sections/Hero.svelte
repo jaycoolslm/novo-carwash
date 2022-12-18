@@ -1,3 +1,12 @@
+<script lang="ts">
+	import { fly } from 'svelte/transition';
+	import { sineOut } from 'svelte/easing';
+	import { onMount } from 'svelte';
+
+	let isInView: boolean;
+	onMount(() => (isInView = true));
+</script>
+
 <section id="one">
 	<div class="content">
 		<h1>A clean car in a few taps</h1>
@@ -7,7 +16,9 @@
 			<a href="/register" class="android">Download for Android<i class="fa-brands fa-android" /></a>
 		</div>
 	</div>
-	<img src="novo-car.png" alt="Novo wash" />
+	{#if isInView}
+		<img in:fly={{ x: 400, easing: sineOut }} src="novo-car.png" alt="Novo wash" />
+	{/if}
 </section>
 
 <style lang="scss">
@@ -31,6 +42,19 @@
 			h1 {
 				font-size: 5rem;
 				margin-bottom: 2rem;
+				position: relative;
+				-webkit-text-stroke: 1px black;
+				&::after {
+					content: 'A clean car in a few taps';
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					color: #0f5e9c;
+					z-index: 100;
+					animation: wave 8s infinite;
+				}
 			}
 			h6 {
 				font-size: 1rem;
@@ -48,9 +72,11 @@
 					margin-bottom: 0.5rem;
 					color: var(--white);
 					display: flex;
-					// justify-content: space-between;
-					// width: 252px;
 					align-items: center;
+					transition: 0.7s all ease;
+					&:hover {
+						background-color: #0f5e9c;
+					}
 					i {
 						margin-left: 0.5rem;
 						font-size: 1.5rem;
@@ -72,14 +98,89 @@
 		@media screen and (max-width: $hide-image) {
 			.content {
 				max-width: 84vw;
-				h1 {
+				h1,
+				h1::after {
 					font-size: 3rem !important;
 				}
 			}
-
-			img {
-				// display: none;
+		}
+		@media screen and (max-width: 654px) {
+			h6 {
+				background-color: rgba(0, 0, 0, 0.3);
+				border-radius: 1rem;
+				padding: 0.5rem;
 			}
+			a {
+				background-color: var(--blue) !important;
+			}
+		}
+	}
+
+	@keyframes wave {
+		0%,
+		100% {
+			clip-path: polygon(
+				0 77%,
+				12% 79%,
+				24% 85%,
+				34% 90%,
+				47% 88%,
+				59% 84%,
+				77% 76%,
+				87% 75%,
+				97% 76%,
+				100% 78%,
+				100% 100%,
+				0% 100%
+			);
+		}
+		25% {
+			clip-path: polygon(
+				0 57%,
+				11% 44%,
+				22% 35%,
+				37% 34%,
+				49% 38%,
+				60% 42%,
+				72% 39%,
+				82% 32%,
+				90% 29%,
+				100% 27%,
+				100% 100%,
+				0% 100%
+			);
+		}
+		50% {
+			clip-path: polygon(
+				0 19%,
+				12% 28%,
+				22% 32%,
+				36% 30%,
+				49% 22%,
+				60% 19%,
+				74% 19%,
+				85% 22%,
+				94% 27%,
+				100% 36%,
+				100% 100%,
+				0% 100%
+			);
+		}
+		75% {
+			clip-path: polygon(
+				0 57%,
+				11% 44%,
+				22% 35%,
+				37% 34%,
+				49% 38%,
+				60% 42%,
+				72% 39%,
+				82% 32%,
+				90% 29%,
+				100% 27%,
+				100% 100%,
+				0% 100%
+			);
 		}
 	}
 </style>

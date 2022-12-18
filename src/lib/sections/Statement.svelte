@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Siema from 'siema';
+	import Slide from '$lib/components/Slide.svelte';
 	import { onMount } from 'svelte';
 
 	let slider: any, prev: any, next: any, radioSlider;
@@ -63,31 +64,18 @@
 		{/each}
 	</div>
 	<div class="siema">
-		<div class="slide">
-			<h3>Our mission</h3>
-			<p>
-				Providing car cleaners an efficient working schedule giving them a standard 9am-5pm working
-				day where car cleaners should be reaping more rewards.by achieving business efficiency and
-				structure
-			</p>
-		</div>
-		<div class="slide">
-			<h3>Our purpose</h3>
-			<p>
-				Striving to help support car cleaners during times of economic uncertainty and instability.
-				The App aims to help car cleaners grow and reach out even more through franchising and
-				reaching more customers and utilising a booking system to improve efficiency measures
-			</p>
-		</div>
-		<div class="slide">
-			<h3>Our platform</h3>
-			<p>
-				Providing customers’ convenience from not waiting in car washing sites queues’ anymore nor
-				having to withdraw cash. Additionally, providing variety from offering a wide range of
-				different cleaning services as well as having the option to choose between a mobile and
-				fixed car washing site.
-			</p>
-		</div>
+		<Slide
+			title="Our mission"
+			text="Providing car cleaners an active working schedule, by aiming to fill a standard 9am-5pm working day, or however long a car cleaner strives to operate. Helping car cleaning businesses achieve greater efficiency, structure & sales. Additionally, making life easy for customers to find the correct & reliable car cleaning business for them based on their need."
+		/>
+		<Slide
+			title="Our purpose"
+			text="Striving to help support car cleaning businesses during times of economic uncertainty & instability. The App aims to help car cleaners build resilience, grow & reach more customers through franchising & utilising a booking system to improve efficiency measures. Additionally, providing customers a convenient platform based on preferences, that offers variety, strong quality, & friendly customer service."
+		/>
+		<Slide
+			title="Our platform"
+			text="Providing a platform for car cleaners to connect with customers, by offering a booking system, a franchise system, & a platform to advertise their business. Additionally, providing customers a platform to find the right car cleaning business for them, based on their preferences, & needs."
+		/>
 	</div>
 </section>
 
@@ -119,9 +107,9 @@
 			}
 		}
 		.bullet {
-			width: 100%;
 			position: absolute;
 			left: 50%;
+			transform: translateX(-50%);
 			bottom: 4rem;
 		}
 		input {
@@ -143,21 +131,11 @@
 		input:checked {
 			background-color: grey;
 		}
-		.slide {
-			min-width: 100vw;
-			padding: 3rem;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-			h3 {
-				font-size: 2rem;
-			}
-			p {
-				margin: 2rem 8vw 0 8vw;
-				max-width: 700px;
-				line-height: 2rem;
-			}
+	}
+
+	@media screen and (max-width: 783px) {
+		i {
+			font-size: 1.5rem;
 		}
 	}
 </style>
