@@ -34,6 +34,9 @@
 				<a href="https://www.tiktok.com/@novowash" target="_blank" rel="noreferrer">
 					<i class="fa-brands fa-tiktok" />
 				</a>
+				<a href="https://twitter.com/NovoWash0" target="_blank" rel="noreferrer">
+					<i class="fa-brands fa-twitter" />
+				</a>
 			</div>
 		{/if}
 	</div>

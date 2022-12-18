@@ -13,6 +13,9 @@
 		<a href="https://www.tiktok.com/@novowash" target="_blank" rel="noreferrer">
 			<i class="fa-brands fa-tiktok" />
 		</a>
+		<a href="https://twitter.com/NovoWash0" target="_blank" rel="noreferrer">
+			<i class="fa-brands fa-twitter" />
+		</a>
 	</div>
 	<a href="mailto:novowashapp@gmail.com">Contact Us</a>
 	<a href="mailto:jaycoolslm@gmail.com"><em>Website by Jay Cool</em></a>
