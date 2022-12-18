@@ -1,7 +1,3 @@
-<script lang="ts">
-	import Socials from '$lib/components/Socials.svelte';
-</script>
-
 <section>
 	<h3>Follow our socials!</h3>
 	<div class="socials">

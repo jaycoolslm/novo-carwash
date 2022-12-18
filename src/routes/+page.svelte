@@ -23,7 +23,7 @@
 		--blue: #3e96bf;
 		--white: white;
 		--black: black;
-		--breakpoint: 583px;
+		--breakpoint: 660px;
 	}
 
 	:global(*) {
