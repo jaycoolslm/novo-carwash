@@ -68,7 +68,7 @@
 	<div class="siema">
 		<Slide
 			title="Our mission"
-			text="Maintain a two-sided marketplace which provides car cleaners with an active working schedule and allows customers to find reliable businesses easily."
+			text="Maintain a two-sided marketplace which provides car cleaners with an active working schedule & allows customers to find reliable businesses easily."
 		/>
 
 		<Slide

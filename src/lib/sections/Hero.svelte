@@ -20,6 +20,22 @@
 				class="android">Download for Android<i class="fa-brands fa-android" /></a
 			>
 		</div>
+		{#if isInView}
+			<div class="socials" in:fly={{ x: -400, easing: sineOut }}>
+				<a href="https://www.facebook.com/groups/753796198578054" target="_blank" rel="noreferrer">
+					<i class="fa-brands fa-facebook-f" />
+				</a>
+				<a href="https://www.instagram.com/novo.wash/" target="_blank" rel="noreferrer">
+					<i class="x fa-brands fa-instagram" />
+				</a>
+				<a href="https://www.linkedin.com/company/novowash1/" target="_blank" rel="noreferrer">
+					<i class="x fa-brands fa-linkedin-in" />
+				</a>
+				<a href="https://www.tiktok.com/@novowash" target="_blank" rel="noreferrer">
+					<i class="fa-brands fa-tiktok" />
+				</a>
+			</div>
+		{/if}
 	</div>
 	{#if isInView}
 		<img in:fly={{ x: 400, easing: sineOut }} src="novo-car.png" alt="Novo wash" />
@@ -71,6 +87,7 @@
 				display: flex;
 				flex-direction: column;
 				align-items: flex-start;
+				margin-bottom: 1rem;
 				a {
 					text-decoration: none;
 					background-color: var(--black);
@@ -100,6 +117,28 @@
 			z-index: 1;
 			// width: calc(80vw - var(--breakpoint));
 			height: 100vh;
+		}
+
+		h3 {
+			color: var(--white);
+			margin-bottom: 1rem;
+		}
+		.socials {
+			display: flex;
+			width: 100%;
+			max-width: 500px;
+			gap: 1rem;
+			margin-bottom: 1rem;
+			i {
+				font-size: 1.5rem;
+				&.x {
+					font-size: 1.7rem;
+				}
+			}
+		}
+		a {
+			color: var(--white);
+			margin-bottom: 1rem;
 		}
 		@media screen and (max-width: $hide-image) {
 			.content {

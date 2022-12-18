@@ -1,10 +1,25 @@
-<section>
-	<h3>Be the first to hear about NovoWash news</h3>
-	<form action="">
-		<input type="text" name="" id="" />
+<script lang="ts">
+	import Socials from '$lib/components/Socials.svelte';
+</script>
 
-		<button type="submit">Subscribe</button>
-	</form>
+<section>
+	<h3>Follow our socials!</h3>
+	<div class="socials">
+		<a href="https://www.facebook.com/groups/753796198578054" target="_blank" rel="noreferrer">
+			<i class="fa-brands fa-facebook-f" />
+		</a>
+		<a href="https://www.instagram.com/novo.wash/" target="_blank" rel="noreferrer">
+			<i class="x fa-brands fa-instagram" />
+		</a>
+		<a href="https://www.linkedin.com/company/novowash1/" target="_blank" rel="noreferrer">
+			<i class="x fa-brands fa-linkedin-in" />
+		</a>
+		<a href="https://www.tiktok.com/@novowash" target="_blank" rel="noreferrer">
+			<i class="fa-brands fa-tiktok" />
+		</a>
+	</div>
+	<a href="mailto:novowashapp@gmail.com">Contact Us</a>
+	<a href="mailto:jaycoolslm@gmail.com"><em>Website by Jay Cool</em></a>
 </section>
 
 <style lang="scss">
@@ -16,28 +31,26 @@
 		min-height: 20vh;
 		h3 {
 			text-align: center;
+			color: var(--white);
+			margin-bottom: 1rem;
 		}
-		form {
+		.socials {
 			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: space-evenly;
+			justify-content: center;
+			width: 100%;
+			max-width: 500px;
 			gap: 1rem;
-
-			button {
-				background-color: white;
-				border: 0;
-				color: black;
-				padding: 0.5rem 1.5rem;
-				border-radius: 2rem;
-				transition: all 0.7s ease;
-				&:hover {
-					background-color: black;
-					color: white;
-					transform: scale(1.1);
-					font-weight: 600;
+			margin-bottom: 1rem;
+			i {
+				font-size: 1.5rem;
+				&.x {
+					font-size: 1.7rem;
 				}
 			}
+		}
+		a {
+			color: var(--white);
+			margin-bottom: 1rem;
 		}
 	}
 </style>
