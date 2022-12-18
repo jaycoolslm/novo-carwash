@@ -18,9 +18,9 @@
 		<div class="card-container">
 			<div in:fade={{ delay: 400, duration: 1000 }} class="card">
 				<p>
-					It was such an easy experience to book and pay for a car cleaner without having to go to
-					an ATM machine. The business I chose showed up on time, was extremely friendly and
-					delivered a great quality service!
+					It was such an easy experience to book & pay for a car cleaner without having to go to an
+					ATM machine. The business I chose showed up on time, was extremely friendly & delivered a
+					great quality service!
 				</p>
 				<h3>Caroline</h3>
 				<h4>Car owner</h4>
@@ -28,8 +28,8 @@
 			</div>
 			<div in:fade={{ delay: 400, duration: 1000 }} class="card">
 				<p>
-					Easy to use. I have recommended to friends and family and I will definitely be using again
-					to book through NovoWash.
+					Easy to use. I have recommended to friends & family & I will definitely be using again to
+					book through NovoWash.
 				</p>
 				<h3>George</h3>
 				<h4>Car owner</h4>

@@ -155,8 +155,10 @@
 				border-radius: 1rem;
 				padding: 0.5rem;
 			}
-			a {
-				background-color: var(--blue) !important;
+			.buttons {
+				a {
+					background-color: var(--blue) !important;
+				}
 			}
 		}
 	}
