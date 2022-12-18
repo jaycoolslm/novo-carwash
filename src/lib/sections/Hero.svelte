@@ -27,6 +27,7 @@
 		min-height: 100vh;
 		position: relative;
 		width: 100vw;
+		overflow-x: none;
 		justify-content: space-between;
 		background-color: var(--blue);
 		.content {

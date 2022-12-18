@@ -16,7 +16,7 @@
 	{#if isInView}
 		<h2 in:fade>Don't just hear it from us!</h2>
 		<div class="card-container">
-			<div in:fade={{ delay: 400 }} class="card">
+			<div in:fade={{ delay: 400, duration: 1000 }} class="card">
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate. Quisquam,
 					voluptate. Quisquam, voluptate. Quisquam, voluptate.
@@ -25,7 +25,7 @@
 				<h4>Car owner</h4>
 				<Stars stars={5} />
 			</div>
-			<div in:fade={{ delay: 400 }} class="card">
+			<div in:fade={{ delay: 400, duration: 1000 }} class="card">
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate. Quisquam,
 					voluptate. Quisquam, voluptate. Quisquam, voluptate.
@@ -34,7 +34,7 @@
 				<h4>Car owner</h4>
 				<Stars stars={5} />
 			</div>
-			<div in:fade={{ delay: 400 }} class="card">
+			<div in:fade={{ delay: 400, duration: 1000 }} class="card">
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate. Quisquam,
 					voluptate. Quisquam, voluptate. Quisquam, voluptate.
