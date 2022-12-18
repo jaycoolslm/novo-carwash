@@ -1,26 +1,15 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
-	import { inview } from 'svelte-inview';
 
 	export let title: string;
 	export let text: string;
-
-	let isInView: boolean;
 </script>
 
-<div
-	class="slide"
-	use:inview={{ unobserveOnEnter: true, rootMargin: '-20%' }}
-	on:change={({ detail }) => {
-		isInView = detail.inView;
-	}}
->
-	{#if isInView}
-		<h2 transition:fade={{ delay: 100, duration: 1000 }}>{title}</h2>
-		<p transition:fade={{ delay: 100, duration: 1000 }}>
-			{text}
-		</p>
-	{/if}
+<div class="slide">
+	<h2>{title}</h2>
+	<p>
+		{text}
+	</p>
 </div>
 
 <style lang="scss">
@@ -35,7 +24,7 @@
 			font-size: 2rem;
 		}
 		p {
-			margin: 2rem 8vw 0 8vw;
+			margin: 2rem 4vw;
 			max-width: 700px;
 			line-height: 2rem;
 		}

@@ -12,8 +12,13 @@
 		<h1>A clean car in a few taps</h1>
 		<h6>The new e-commerce marketplace which connects customers with car cleaners</h6>
 		<div class="buttons">
-			<a href="/login" class="ios">Download for iOS<i id="apple" class="fa-brands fa-apple" /></a>
-			<a href="/register" class="android">Download for Android<i class="fa-brands fa-android" /></a>
+			<a href="https://apps.apple.com/gb/app/novowash/id1601206174" class="ios"
+				>Download for iOS<i id="apple" class="fa-brands fa-apple" /></a
+			>
+			<a
+				href="https://play.google.com/store/apps/details?id=com.sigmasolve.novowash"
+				class="android">Download for Android<i class="fa-brands fa-android" /></a
+			>
 		</div>
 	</div>
 	{#if isInView}
@@ -27,7 +32,7 @@
 		min-height: 100vh;
 		position: relative;
 		width: 100vw;
-		overflow-x: none;
+		overflow-x: hidden;
 		justify-content: space-between;
 		background-color: var(--blue);
 		.content {

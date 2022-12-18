@@ -18,17 +18,18 @@
 		<div class="card-container">
 			<div in:fade={{ delay: 400, duration: 1000 }} class="card">
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate. Quisquam,
-					voluptate. Quisquam, voluptate. Quisquam, voluptate.
+					It was such an easy experience to book and pay for a car cleaner without having to go to
+					an ATM machine. The business I chose showed up on time, was extremely friendly and
+					delivered a great quality service!
 				</p>
-				<h3>Meghan</h3>
+				<h3>Caroline</h3>
 				<h4>Car owner</h4>
 				<Stars stars={5} />
 			</div>
 			<div in:fade={{ delay: 400, duration: 1000 }} class="card">
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate. Quisquam,
-					voluptate. Quisquam, voluptate. Quisquam, voluptate.
+					Easy to use. I have recommended to friends and family and I will definitely be using again
+					to book through NovoWash.
 				</p>
 				<h3>George</h3>
 				<h4>Car owner</h4>
@@ -36,11 +37,11 @@
 			</div>
 			<div in:fade={{ delay: 400, duration: 1000 }} class="card">
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate. Quisquam,
-					voluptate. Quisquam, voluptate. Quisquam, voluptate.
+					Reassuring knowing that if any problems occur, NovoWash can help assist. Good
+					customer service.
 				</p>
-				<h3>Lucas</h3>
-				<h4>Business owner</h4>
+				<h3>Lisa</h3>
+				<h4>Car owner</h4>
 				<Stars stars={5} />
 			</div>
 		</div>
@@ -78,7 +79,7 @@
 					margin-bottom: 1rem;
 				}
 				p {
-					line-height: 1.5rem;
+					line-height: 2rem;
 					margin-bottom: 2rem;
 				}
 				h4 {

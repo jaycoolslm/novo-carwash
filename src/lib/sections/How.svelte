@@ -28,16 +28,20 @@
 				<i class="fa-solid fa-car" />
 				<h3>Car owners</h3>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate. Quisquam,
-					voluptate. Quisquam, voluptate. Quisquam, voluptate.
+					Sign up as a customer to explore the marketplace and find a vetted business near to you.
+					Choose whether you would like a mobile car cleaner or drive to a site without waiting in
+					the queue, and decide what service fits your needs! Afterwards, please provide a review to
+					give a reflection of your experience!
 				</p>
 			</div>
 			<div class="card" in:fly={{ y: 300, duration: 1000, delay: 500 }}>
 				<i class="fa-solid fa-business-time" />
 				<h3>Business owners</h3>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate. Quisquam,
-					voluptate. Quisquam, voluptate. Quisquam, voluptate.
+					Sign up as a car cleaning business & add your working hours & services you provide. The
+					NovoWash marketplace will check your business fits the standard criteria and then we will
+					strive to fulfill your operating hours. If you have many employees, share account
+					credentials between your team!
 				</p>
 			</div>
 		{/if}
@@ -76,7 +80,7 @@
 					margin-bottom: 3rem;
 				}
 				p {
-					line-height: 1.5rem;
+					line-height: 2rem;
 				}
 			}
 		}
