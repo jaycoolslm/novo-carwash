@@ -77,7 +77,7 @@
 		/>
 		<Slide
 			title="Our platform"
-			text="Provides customers convenience through minimising waiting periods & cashless transactions. We settle any problems that may occur with the NovoWash operators so can guarantee satisfaction."
+			text="Provides customers convenience through minimising waiting periods & cashless transactions. NovoWash operators can help settle any problems that may occur through getting a car cleaned, ensuring customer satisfaction."
 		/>
 	</div>
 </section>
