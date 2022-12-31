@@ -18,7 +18,6 @@
 		</a>
 	</div>
 	<a href="mailto:novowashapp@gmail.com">Contact Us</a>
-	<a href="mailto:jaycoolslm@gmail.com"><em>Website by Jay Cool</em></a>
 </section>
 
 <style lang="scss">
