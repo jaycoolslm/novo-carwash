@@ -9,7 +9,7 @@
 
 <section id="one">
 	<div class="content">
-		<h1>A clean car in a couple clicks</h1>
+		<h1>A clean car in a couple of clicks</h1>
 		<h6>The new e-commerce marketplace which connects customers with car cleaners</h6>
 		<div class="buttons">
 			<a href="https://apps.apple.com/gb/app/novowash/id1601206174" class="ios"
