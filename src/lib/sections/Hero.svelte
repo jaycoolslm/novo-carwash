@@ -70,7 +70,7 @@
 				position: relative;
 				-webkit-text-stroke: 1px black;
 				&::after {
-					content: 'A clean car in a couple clicks';
+					content: 'A clean car in a couple of clicks';
 					position: absolute;
 					width: 100%;
 					height: 100%;
